@@ -1,0 +1,20 @@
+apiVersion: skaffold/v4beta11
+kind: Config
+metadata:
+  name: pet-store-landing
+build:
+  artifacts:
+  - image: pet-store-landing
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - k8s/deployment.yaml
+    - k8s/service.yaml
+    - k8s/ingress.yaml
+portForward:
+- resourceType: service
+  resourceName: pet-store-landing-service
+  port: 80
+  localPort: 8080

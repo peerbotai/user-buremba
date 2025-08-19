@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pet-store-landing-service
+  labels:
+    app: pet-store-landing
+spec:
+  selector:
+    app: pet-store-landing
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+  type: ClusterIP
