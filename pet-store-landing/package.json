@@ -1,0 +1,28 @@
+{
+  "name": "happy-paws-pet-store",
+  "version": "1.0.0",
+  "description": "A modern pet store landing page for pet adoption and services",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "preview": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "pet-store",
+    "landing-page",
+    "pet-adoption",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Happy Paws Pet Store",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerbotai/user-buremba"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
