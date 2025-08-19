@@ -1,0 +1,13 @@
+{
+  "name": "pet-store-landing",
+  "version": "1.0.0",
+  "description": "A beautiful landing page for Happy Paws Pet Store",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": ["pet-store", "landing-page", "html", "css", "javascript"],
+  "author": "user-buremba",
+  "license": "MIT"
+}
