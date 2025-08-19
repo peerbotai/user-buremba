@@ -1,0 +1,21 @@
+This is an example file
+
+Here are some sample data points:
+- Item 1: Configuration settings
+- Item 2: User preferences  
+- Item 3: Application state
+- Item 4: Debug information
+
+Status: Active
+Created: 2025-08-19
+Purpose: Demonstration and testing
+
+Example JSON data:
+{
+  "name": "sample_config",
+  "version": "1.0",
+  "enabled": true,
+  "options": ["option1", "option2", "option3"]
+}
+
+End of example file.
