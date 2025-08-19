@@ -1,0 +1,7 @@
+# Redirect rules for Cloudflare Pages
+/shop          /index.html#products    200
+/contact       /index.html#contact     200
+/services      /index.html#services    200
+
+# 404 fallback
+/*             /index.html             200
