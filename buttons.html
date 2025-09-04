@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Buttons Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .button {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button-1 {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        .button-1:hover {
+            background-color: #ee5a52;
+            transform: translateY(-2px);
+        }
+        .button-2 {
+            background-color: #4ecdc4;
+            color: white;
+        }
+        .button-2:hover {
+            background-color: #45b7b8;
+            transform: translateY(-2px);
+        }
+        .button-3 {
+            background-color: #45b7d1;
+            color: white;
+        }
+        .button-3:hover {
+            background-color: #3498db;
+            transform: translateY(-2px);
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            min-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Click Any Button!</h1>
+        <div>
+            <button class="button button-1" onclick="showMessage('You clicked the Red button! 🔴')">Red Button</button>
+            <button class="button button-2" onclick="showMessage('You clicked the Green button! 🟢')">Green Button</button>
+            <button class="button button-3" onclick="showMessage('You clicked the Blue button! 🔵')">Blue Button</button>
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function showMessage(text) {
+            document.getElementById('message').textContent = text;
+            setTimeout(() => {
+                document.getElementById('message').textContent = '';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
